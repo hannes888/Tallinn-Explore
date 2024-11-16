@@ -23,6 +23,10 @@
       </button>
       <div class="accordion-content" #accordionContent [style.maxHeight]="item.active ? item.contentHeight : '0'">
         <p>{{ item.content }}</p>
+        <a [routerLink]="item.link">
+          <img src="assets/img/icons8-right-50.png" alt="Link Icon" class="link-icon"/>
+          Learn more
+        </a>
       </div>
     </div>
   </div>
