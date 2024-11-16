@@ -1,0 +1,28 @@
+
+.navbar {
+  position: fixed;
+  width: 100%;
+  z-index: 1000;
+  top: 0;
+  background-color: #a4bad9;
+  height: 10vh;
+  display: flex;
+  flex-direction: row;
+  justify-content: right;
+  align-items: center;
+}
+
+.navbar-anchor {
+  font-size: 32px;
+  padding-right: 50px;
+  font-weight: bold;
+  color: #333333;
+}
+
+.navbar-anchor:hover {
+  cursor: pointer;
+}
+
+img {
+  padding-right: 50px;
+}
