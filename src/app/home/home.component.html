@@ -1,0 +1,29 @@
+<div class="welcome-container">
+  <h1 class="welcome-title">Welcome to Tallinn Explore</h1>
+</div>
+
+<div class="tour-section-container">
+  <img src="assets/img/Adcash_Day2_PicNr01796-2.jpg" alt="Tour Guide" class="tour-section-image"/>
+  <div class="tour-text-container">
+  <h2 class="tour-section-title">Meet your guide, Ani</h2>
+  <p class="tour-section-text">I have been exploring the beautiful city of Tallinn for the past 6 years
+    and have worked as a guide here for 3 years,
+    with a total of 13 years of experience in guiding.
+    I enjoy trying new things and immersing myself in different cultures.
+    I am fluent in English, Russian, Armenian, and Spanish, which allows me to connect with a diverse range of visitors.</p>
+  </div>
+</div>
+
+<div class="recommendations-container">
+  <img src="assets/img/IMG_0927.JPG" alt="Restaurant" class="recommendations-image"/>
+  <div class="accordion">
+    <div class="accordion-item" *ngFor="let item of accordionItems">
+      <button class="accordion-button" (click)="toggleAccordion(item)">
+        {{ item.title }}
+      </button>
+      <div class="accordion-content" #accordionContent [style.maxHeight]="item.active ? item.contentHeight : '0'">
+        <p>{{ item.content }}</p>
+      </div>
+    </div>
+  </div>
+</div>

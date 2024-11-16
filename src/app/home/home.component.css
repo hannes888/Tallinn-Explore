@@ -1,0 +1,125 @@
+
+.welcome-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  position: static;
+  width: 100%;
+  top: 0;
+  background-image: url('../../../public/assets/img/20240111_152354_03.jpg');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+.welcome-title {
+  font-size: 5em;
+  color: white;
+  text-align: center;
+  margin-top: 20px;
+  mix-blend-mode: difference;
+}
+
+.welcome-text {
+  font-size: 3em;
+  color: white;
+  text-align: center;
+  margin-top: 10px;
+}
+
+/* Book a tour section */
+.tour-section-container {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  padding: 20px;
+  background-color: rgba(186, 184, 174, 0.56);
+  height: 400px;
+}
+
+.tour-text-container {
+  display: flex;
+  flex-direction: column;
+  max-width: 50%;
+}
+
+.tour-section-title {
+  font-size: 32px;
+  color: #333;
+  text-align: center;
+  margin-bottom: 10px;
+}
+
+.tour-section-text {
+  font-size: 1.2em;
+  color: #666;
+  text-align: center;
+  line-height: 1.5;
+  font-style: italic;
+}
+
+.tour-section-image {
+  width: auto;
+  max-height: 300px;
+  margin-bottom: 20px;
+  margin-right: 50px;
+  border-radius: 3px;
+}
+
+.recommendations-container {
+  padding: 40px;
+  background-color: #897b62;
+  height: auto; /* Adjust height to fit content */
+  overflow: hidden; /* Clear floats */
+  display: flex;
+  justify-content: center;
+  align-items: flex-start; /* Align items to the start */
+}
+
+.recommendations-image {
+  float: left;
+  width: auto;
+  max-height: 300px;
+  margin-right: 20px;
+  border-radius: 3px;
+}
+
+.accordion {
+  width: 50vh;
+}
+
+.accordion-item {
+  margin-bottom: 10px;
+}
+
+.accordion-button {
+  background: none;
+  color: #212121;
+  padding: 10px 20px;
+  font-size: 32px;
+  border: none;
+  cursor: pointer;
+  width: 100%;
+  text-align: left;
+  font-family: inherit;
+  font-weight: bold;
+  display: inline-block;
+}
+
+.accordion-content {
+  max-height: 0;
+  overflow: hidden;
+  transition: max-height 0.3s ease-out;
+  background: none;
+  padding-left: 20px;
+  border: none;
+  width: 100%;
+}
+
+.accordion-item.active .accordion-content {
+  max-height: 200px;
+  padding: 10px;
+}
