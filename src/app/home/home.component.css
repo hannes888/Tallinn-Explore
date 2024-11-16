@@ -36,7 +36,7 @@
   justify-content: center;
   align-items: center;
   padding: 20px;
-  background-color: rgba(186, 184, 174, 0.56);
+  background-color: #BAB8AE8E;
   height: auto;
   min-height: 350px;
 }
@@ -100,13 +100,16 @@
   color: #212121;
   padding: 10px 20px;
   font-size: 32px;
-  border: none;
   cursor: pointer;
   width: 100%;
   text-align: left;
   font-family: inherit;
   font-weight: bold;
-  display: inline-block;
+  border: none;
+  border-top: 2px solid #212121;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
 }
 
 .accordion-content {
