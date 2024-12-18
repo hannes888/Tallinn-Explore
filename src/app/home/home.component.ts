@@ -10,7 +10,7 @@ import {RouterLink} from '@angular/router';
     RouterLink
   ],
   templateUrl: './home.component.html',
-  styleUrls: ['./home.component.css'] // Corrected to styleUrls
+  styleUrls: ['./home.component.css']
 })
 export class HomeComponent {
   @ViewChildren('accordionContent') accordionContents!: QueryList<ElementRef>;
